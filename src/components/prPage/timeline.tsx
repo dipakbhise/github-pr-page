@@ -50,7 +50,7 @@ const events = [
   {
     type: "edit",
     content: `
-    <div class="flex">
+    <div class="flex flex-wrap">
       <a class="rounded" href="/YordanIliev2002">
         <img class="rounded-full mr-1" src="https://avatars.githubusercontent.com/u/15782156?s=40&amp;v=4" width="20" height="20" alt="@YordanIliev2002" />
       </a>
@@ -72,7 +72,7 @@ const events = [
   {
     type: "commit",
     content: `
-    <div class="flex">
+    <div class="flex flex-wrap">
       <a class="avatar avatar-user" href="/YordanIliev2002">
         <img class="rounded-full mr-1" src="https://avatars.githubusercontent.com/u/15782156?s=40&amp;v=4" width="20" height="20" alt="@YordanIliev2002" />
       </a>
@@ -102,7 +102,7 @@ const events = [
   },
   {
     type: "edit",
-    content:`<div class="flex">
+    content:`<div class="flex flex-wrap">
     <a class="rounded" href="/YordanIliev2002">
       <img class="rounded-full mr-1" src="https://avatars.githubusercontent.com/u/15782156?s=40&amp;v=4" width="20" height="20" alt="@YordanIliev2002" />
     </a>
@@ -123,7 +123,7 @@ const events = [
   },
   {
     type: "force-push",
-    content: `<div class="flex justify-between w-full">
+    content: `<div class="flex justify-between w-full flex-wrap">
     <div class="flex">
     <a href="/YordanIliev2002">
       <img class="rounded-full mr-1"
@@ -164,7 +164,7 @@ const events = [
   },
   {
     type: "approval",
-    content: `<div class="flex justify-between w-full">
+    content: `<div class="flex justify-between w-full flex-wrap">
     <div><a href="/YordanIliev2002" class="text-[#59636e] dark:text-white font-bold">Jacksonmills </a> approved these changes on Mar 15</div>
     <div>
     <a  href="/shadcn-ui/ui/compare/26c11499e13a5b32cbc9721b792fb8a25c12e728..5a7285763616b397bf736ea84b2d38b237b3da18">
@@ -178,7 +178,7 @@ const events = [
   },
   {
     type: "approval",
-    content: `<div class="flex justify-between w-full">
+    content: `<div class="flex justify-between w-full flex-wrap">
     <div><a href="/YordanIliev2002" class="text-[#59636e] dark:text-white font-bold">matevegh </a> approved these changes last month</div>
     <div>
     <a  href="/shadcn-ui/ui/compare/26c11499e13a5b32cbc9721b792fb8a25c12e728..5a7285763616b397bf736ea84b2d38b237b3da18">
@@ -218,7 +218,7 @@ const events = [
   },
   {
     type: "deploy",
-    content: `<div class="flex justify-between w-full">
+    content: `<div class="flex justify-between w-full flex-wrap">
     <div class="flex">
     <a href="/apps/vercel">
       <img
@@ -290,7 +290,7 @@ const events = [
   },
   {
     type: "deploy",
-    content: `<div class="flex justify-between w-full">
+    content: `<div class="flex justify-between w-full flex-wrap">
     <div class="flex">
     <a href="/apps/vercel">
       <img
@@ -336,7 +336,7 @@ const events = [
   {
     type: "merge",
     content: `<div >
-    <div class="flex justify-between w-full">
+    <div class="flex justify-between w-full flex-wrap">
 
     <div class="flex ">
   

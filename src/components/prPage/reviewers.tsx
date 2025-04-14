@@ -29,9 +29,9 @@ export const Sidebar: React.FC = () => {
                 alt={reviewer.name}
                 className="w-6 h-6 rounded-full"
               />
-              <span className="ml-2 text-[#1f2328] font-bold text-[12px]">{reviewer.name}</span>
+              <span className="ml-2 text-[#1f2328] font-bold text-[12px] dark:text-white">{reviewer.name}</span>
               </div>
-              <ApproveIcon/>
+              <ApproveIcon />
             </div>
           ))}
         </div>
@@ -42,7 +42,7 @@ export const Sidebar: React.FC = () => {
       {/* Assignees */}
       <div>
         <p className="font-semibold mb-1 text-[#59636e] text-[12px]">Assignees</p>
-        <p className="text-[#1f2328] text-[12px]">No one assigned</p>
+        <p className="text-[#1f2328] text-[12px] dark:text-white">No one assigned</p>
       </div>
 
       <hr className="text-[#d1d9e0b3]"/>
@@ -62,7 +62,7 @@ export const Sidebar: React.FC = () => {
       {/* Projects */}
       <div>
         <p className="font-semibold mb-1 text-[#59636e] text-[12px]">Projects</p>
-        <p className="text-[#1f2328] text-[12px]">None yet</p>
+        <p className="text-[#1f2328] text-[12px] dark:text-white">None yet</p>
       </div>
 
       <hr className="text-[#d1d9e0b3]" />
@@ -70,7 +70,7 @@ export const Sidebar: React.FC = () => {
       {/* Milestone */}
       <div>
         <p className="font-semibold mb-1 text-[#59636e] text-[12px]">Milestone</p>
-        <p className="text-[#1f2328] text-[12px]">No milestone</p>
+        <p className="text-[#1f2328] text-[12px] dark:text-white">No milestone</p>
       </div>
 
       <hr className="text-[#d1d9e0b3]"/>
@@ -78,10 +78,10 @@ export const Sidebar: React.FC = () => {
       {/* Development */}
       <div>
         <p className="font-semibold mb-2 text-[#59636e] text-[12px]">Development</p>
-        <p className="text-[#1f2328] text-[12px]">
+        <p className="text-[#1f2328] text-[12px] dark:text-white">
           Successfully merging this pull request may close these issues.
         </p>
-        <p className="text-[#1f2328] text-[12px] mt-4">None yet</p>
+        <p className="text-[#1f2328] text-[12px] mt-4 dark:text-white">None yet</p>
       </div>
 
       <hr className="text-[#d1d9e0b3]"/>
@@ -98,7 +98,7 @@ export const Sidebar: React.FC = () => {
         >
           <BellIcon fill="#25292e"/> <span className="ml-1 text-[#25292e] text-[12px]">Subscribe</span>
         </button>
-        <p className="text-[#59636e] mb-2 text-[12px]">
+        <p className="text-[#59636e] mb-2 text-[12px] dark:text-white">
           You’re not receiving notifications from this thread.
         </p>
       </div>
