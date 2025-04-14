@@ -61,7 +61,7 @@ const TabComponent: React.FC = () => {
 
       {/* Tab Content */}
       <div className="mt-3 flex w-full flex-wrap  justify-between">
-        <div className="w-[74%]">
+        <div className="w-[77%]">
         {tabs.map((tab) => (
           <div
             key={tab.id}
@@ -78,7 +78,7 @@ const TabComponent: React.FC = () => {
         ))}
         </div>
 
-        <div className="w-[24%]"><Sidebar /></div>
+        <div className="w-[22%]"><Sidebar /></div>
 
       </div>
     </div>
