@@ -1,5 +1,6 @@
 
 
+import React from "react";
 import {
   ApproveIcon,
   CommitIcon,
@@ -13,6 +14,7 @@ import {
 } from "../../utils/icons";
 import SignupCard from "../common/signUpCard";
 import { DeploymentsTable } from "./deploymentsTable";
+
 
 const events = [
   {
@@ -231,7 +233,7 @@ const events = [
     </a>
   
     <a href="/apps/vercel" class="text-[#59636e] dark:text-white font-bold">vercel</a>
-    <span class="border-[#d1d9e0] border-1 rounded-full px-2 font-semibold dark:text-[#1f2328] mx-1 dark:text-white">bot</span>
+    <span class="border-[#d1d9e0] border-1 rounded-full px-2 font-semibold mx-1 dark:text-white">bot</span>
   
     <a href="https://ui-8haywbxtv-shadcn-pro.vercel.app" target="_blank" rel="noopener noreferrer" class="text-[#59636e] mx-1 dark:text-white">
       deployed
@@ -303,7 +305,7 @@ const events = [
     </a>
   
     <a href="/apps/vercel" class="text-[#59636e] dark:text-white font-bold">vercel</a>
-    <span class="border-[#d1d9e0] border-1 rounded-full px-2 font-semibold dark:text-[#1f2328] mx-1 dark:text-white">bot</span>
+    <span class="border-[#d1d9e0] border-1 rounded-full px-2 font-semibold  mx-1 dark:text-white">bot</span>
   
     <a href="https://ui-8haywbxtv-shadcn-pro.vercel.app" target="_blank" rel="noopener noreferrer" class="text-[#59636e] mx-1 dark:text-white">
       deployed
@@ -350,7 +352,7 @@ const events = [
       />
     </a>
   
-    <a href="/apps/kodiakhq" class="text-[#59636e] dark:text-white font-bold ml-1">kodiakhq</a> <span class="mx-1 border-[#d1d9e0] border-1 rounded-full px-2 font-semibold dark:text-[#1f2328] dark:text-white">bot</span>
+    <a href="/apps/kodiakhq" class="text-[#59636e] dark:text-white font-bold ml-1">kodiakhq</a> <span class="mx-1 border-[#d1d9e0] border-1 rounded-full px-2 font-semibold dark:text-white">bot</span>
   
     <span class="text-[#59636e] mx-1 dark:text-white">merged commit</span>
     <a href="/shadcn-ui/ui/commit/61e21e33568eaf6e0f024f87fc6e10597eed3b4e">
@@ -390,7 +392,7 @@ const events = [
   },
 ];
 
-const iconMap: Record<string, JSX.Element> = {
+const iconMap: Record<string, React.ReactNode> =  {
   comment: "icon",
   "force-push": <ForcePushIcon />,
   approval: <ApproveIcon />,
@@ -573,7 +575,7 @@ export const Timeline = () => {
                 <div className="p-3 bg-white dark:bg-neutral-800 rounded-b-lg">
                   <p
                     className="text-[#1f2328] dark:text-neutral-300"
-                    dangerouslySetInnerHTML={{ __html: event?.comment }}
+                    dangerouslySetInnerHTML={{ __html: event?.comment || ''  }}
                   />
 
                   <div className="flex mt-4">

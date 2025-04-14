@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { ReactNode, useState } from "react";
 import { Timeline } from "./timeline";
 import { ChecksIcon, CommitIcon, ConversationIcon, FilesChangedIcon } from "../../utils/icons";
 import { Sidebar } from "./reviewers";
@@ -6,7 +6,9 @@ import { Sidebar } from "./reviewers";
 interface Tab {
   id: string;
   label: string;
-  content: string;
+  content:  ReactNode;
+  icon:ReactNode;
+  count:number;
 }
 
 const tabs: Tab[] = [
@@ -43,7 +45,7 @@ const TabComponent: React.FC = () => {
             <button
               key={tab.id}
               type="button"
-              className={`-mb-px rounded-[4px] py-3 px-4 inline-flex items-center gap-x-2 text-sm font-medium text-center border rounded-none focus:outline-none text-[#1f2328]
+              className={`-mb-px rounded-[4px] py-3 px-4 inline-flex items-center gap-x-2 text-sm font-medium text-center border focus:outline-none text-[#1f2328]
                 ${
                   activeTab === tab.id
                     ? "bg-white border-b-transparent  border-[#d1d9e0] hover:border-[#d1d9e0]"

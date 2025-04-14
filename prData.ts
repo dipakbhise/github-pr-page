@@ -1,4 +1,4 @@
-import { Comment, TimelineEvent, PRMeta } from "../types";
+import { Comment, TimelineEvent, PRMeta } from "./types";
 
 export const prMeta: PRMeta = {
   title: "docs: fix typo in CSS selector",
